@@ -20,11 +20,11 @@ It includes a simple interactive viewer powered by HTML and JavaScript, allowing
 
 ### 1. Run the Map Generator
 
-Execute the `generatePRGE.py` script to process your `provinces.bmp`, `definition.csv`, and state files. This will output:
+Execute the `update.py` script to process your `provinces.bmp`, `definition.csv`, and state files. This will output:
 - A `provinces.json` file
 - Tiled PNGs of your map in the `tiles/` folder
 
-    python generatePRGE.py
+    python update.py
 
 This script also automatically removes any previous `provinces.json` and tiles before regeneration.
 
@@ -32,9 +32,9 @@ This script also automatically removes any previous `provinces.json` and tiles b
 
 ### 2. Start the Viewer
 
-Use the `pgre.bat` script to launch a local web server:
+Use the `viewer.bat` script to launch a local web server:
 
-    pgre.bat
+    viewer.bat
 
 This starts a local HTTP server at `localhost:8000`, allowing JavaScript in the viewer to access and render the generated map data.
 
