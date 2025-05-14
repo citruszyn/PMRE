@@ -1,3 +1,7 @@
+# ATTENTION
+# This will become deprecated with the release of the modlab. Continue with caution.
+
+
 # 🗺️ Paradox Map Replication Engine
 
 The **Paradox Map Replication Engine** is a tool designed to automate the processing and validation of map files for Paradox Interactive titles, with a primary focus on **Hearts of Iron IV (HOI4)**. It replicates the internal behavior of the game engine’s map compiler — handling `provinces.bmp`, `definition.csv`, and related map infrastructure — to help modders debug and validate their custom maps **outside of the HOI4 executable**.
