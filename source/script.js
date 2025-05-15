@@ -1,4 +1,4 @@
-const TILE_SIZE = 512;
+const TILE_SIZE = 1024;
 const TILE_URL = './tiles/';
 const PROVINCES_JSON = './provinces.json';
 
@@ -51,10 +51,10 @@ function drawMap() {
 
   for (let y = 0; y < rows; y++) {
     for (let x = 0; x < cols; x++) {
-      const key = `${x}_${y}`;
+      const key = `${x * TILE_SIZE}_${y * TILE_SIZE}`;
       if (!tiles[key]) {
         const img = new Image();
-        img.src = `${TILE_URL}${x}_${y}.png`;
+        img.src = `${TILE_URL}${x * TILE_SIZE}_${y * TILE_SIZE}.png`;
         img.onload = () => {
           tiles[key] = img;
           drawMap(); // Re-draw when image is loaded
